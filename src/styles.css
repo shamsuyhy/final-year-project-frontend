@@ -1,1 +1,152 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header .logo-details {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.header .logo-details .log_name {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+}
+.header .logo-details i {
+  font-size: 25px;
+  color: #fff;
+  height: 50px;
+  min-width: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.sidebar .nav-links {
+  height: 100%;
+  padding: 0;
+  padding-top: 0px;
+}
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li:hover {
+  background: #1d1b31;
+}
+.sidebar .nav-links li i {
+  height: 50px;
+  min-width: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+.sidebar .nav-links li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.sidebar .nav-links li a .link_name {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+.sidebar .nav-links li .icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar .nav-links li .sub-menu {
+  padding: 6px 6px 14px 50px;
+  margin-top: -10px;
+}
+.sidebar .nav-links .icon-link {
+  cursor: pointer;
+}
+.sidebar .nav-links li .sub-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px 0;
+}
+.main2 {
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 8% 85% 7%;
+
+}
+
+.header {
+
+  background-color: #508bfc;
+  text-align: center;
+  color: white;
+}
+.footer {
+  background-color: #508bfc;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+.sidebar {
+  height: 100%;
+  background-color: #11101d;
+}
+.mid7 {
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+.mid2{
+  display: grid;
+  grid-template-rows:50px auto ;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+.navi{
+display: flex;
+overflow: hidden;
+
+}
+.mid2 .scrol {
+margin: 10px;
+
+overflow: scroll ;
+  /* IE and Edge */
+  scrollbar-width:thin;
+}
+
+.button__badge {
+  background-color: #3f71ce;
+  width: 100%;
+  border-radius: 2px;
+  color: white;
+  padding: 1px 3px;
+  font-size: 12px;
+  position: relative; /* Position the badge within the relatively positioned button */
+  top: 0;
+  right: 0;
+}
+.nav-link{
+  display: block;
+}
+.sidebar .nav-links li .sub-menu a:hover {
+
+  text-decoration: underline;
+  color: #0d6efd;
+}
+

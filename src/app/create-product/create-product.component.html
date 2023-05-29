@@ -1,0 +1,73 @@
+<div class="col-md-5 offset-md-1">
+  <h3>Create Product</h3>
+  <form #productform="ngForm"  >
+    <div class="form-group">
+      <label for="productId">Product id:</label>
+      <input type="text"
+      [(ngModel)]="product.productId"
+      name="productId"
+      #productId="ngModel"
+      class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="productPrice">Product price</label>
+      <input type="number"
+      [(ngModel)]="product.productPrice"
+      name="productPrice"
+      #productPrice="ngModel"
+      class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="productName">Product name</label>
+      <input type="text"
+      [(ngModel)]="product.productName"
+      name="productName"
+      #productName="ngModel"
+      class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="productDiscount">Product Discount</label>
+      <input type="number"
+      [(ngModel)]="product.productDiscount"
+      name="productDiscount"
+      #productDiscount="ngModel"
+      class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="description">Product description</label>
+      <textarea
+      cols="30"
+      rows="10"
+      [(ngModel)]="product.description"
+        name="description"
+        #description="ngModel"
+        class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="productImgURL">Image</label>
+      <input type="file"
+      value.select
+      ngModel
+      name="productDiscount"
+      #selectFile="ngModel"
+      (change)="onFileSelected($event)"
+      class="form-control">
+    </div>
+
+
+  </form>
+</div>
+<!--
+{
+        "productId": "096212840-6",
+        "productName": "Cheese - Manchego, Spanish",
+        "productPrice": 8800,
+        "productDiscount": null,
+        "description": "Removal of Drainage Device from R Tarsal Jt, Open Approach",
+        "productImgURL": null,
+        "stockOption": null,
+        "buyingPrice": null,
+        "productOrders": [],
+        "sku": null
+    }
+  -->

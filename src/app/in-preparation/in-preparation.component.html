@@ -1,0 +1,47 @@
+<h2>orders list</h2>
+<div class="container">
+<table class="table">
+  <thead>
+    <tr>
+      <th ></th>
+      <th >order id</th>
+      <th>Client name</th>
+      <th>client Phone</th>
+      <th>Wilaya</th>
+      <th>Comune</th>
+      <th>Products</th>
+      <th>Confirmed at:</th>
+      <th>Action</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders">
+      <td>
+        <div >
+daf
+      </div>
+    </td>
+      <td>{{order.orderId}}</td>
+      <td>
+        {{order.clientName}}
+      </td>
+      <td>{{order.clientPhone}}</td>
+      <td>{{order.wilaya}}</td>
+      <td>{{order.comune}}</td>
+      <td>{{order.totalPrice}}</td>
+      <td>{{order.currentStatusDate | date: 'short' }}</td>
+      <td>
+        <button class="btn btn-primary " style="font-size: 12px;" >Edit</button>
+        <button class="btn btn-danger " style="margin-left: 10px; font-size: 12px;" >Delete</button>
+      </td>
+
+    </tr>
+
+
+
+  </tbody>
+</table>
+</div>
+
